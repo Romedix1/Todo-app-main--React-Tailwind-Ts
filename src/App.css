@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*
+{
+    font-family: 'Josefin Sans', 'sans-serif';
+    transition: .3s;
+    --backgroundGradient: linear-gradient(125deg, hsl(192, 100%, 67%) 0%, hsl(280, 87%, 65%) 100%);
+}
+
+body
+{
+    overflow-y: hidden;
+}
+
+.top-content--container__light
+{
+    background: url(../public/images/bg-mobile-light.jpg) no-repeat center/cover;
+}
+
+.top-content--container__dark
+{
+    background: url(../public/images/bg-mobile-dark.jpg) no-repeat center/cover;
+}
+
+.top--content-form-button:hover
+{
+        background: var(--backgroundGradient)  !important;
+}
+
+.main-list--button:hover
+{
+    border-color: var(--backgroundGradient);
+}
+
+.main-list--button__completed
+{
+    background: var(--backgroundGradient)  !important;
+}
+
+@media (min-width: 768px) {
+
+    .top-content--container__light
+    {
+        background: url(../public/images/bg-desktop-light.jpg) no-repeat center/cover;
+    }
+
+    .top-content--container__dark
+    {
+        background: url(../public/images/bg-desktop-dark.jpg) no-repeat center/cover;
+    }
+}
